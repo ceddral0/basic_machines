@@ -704,6 +704,9 @@ minetest.register_node("basic_machines:mover", {
 				if basic_machines.plant_table[prefer]~=nil then
 					prefer = basic_machines.plant_table[prefer];
 				end
+				if not minetest.registered_nodes[prefer] then
+					prefer = ""
+				end
 			end
 			end
 
