@@ -100,14 +100,20 @@ basic_machines.no_teleport_table = {
 -- list of nodes mover cant take from in inventory mode
 basic_machines.limit_inventory_table = { -- node name = {list of bad inventories to take from} OR node name = true to ban all inventories
 	["basic_machines:autocrafter"]= {["recipe"]=1, ["output"]=1},
-	["basic_machines:constructor"]= {["recipe"]=1},
 	["basic_machines:battery_0"] = {["upgrade"] = 1},
 	["basic_machines:battery_1"] = {["upgrade"] = 1},
 	["basic_machines:battery_2"] = {["upgrade"] = 1},
+	["basic_machines:constructor"]= {["recipe"]=1},
+	["basic_machines:detector"] = true,
 	["basic_machines:generator"] = {["upgrade"] = 1},
-	["basic_machines:mover"] = true,
 	["basic_machines:grinder"] = {["upgrade"] = 1},
+	["basic_machines:mover"] = true,
+	["craft_guide:sign_wall"] = true,
 	["moreblocks:circular_saw"] = true,
+	["pipeworks:autocrafter"] = {["recipe"]=1},
+	["pipeworks:digiline_filter"] = true,
+	["pipeworks:filter"] = true,
+	["pipeworks:mese_filter"] = true,
 	["smartshop:shop"] = true,
 }
 
