@@ -78,7 +78,6 @@ local item_to_node = function(item)
 			if cropdef.seed == item then
 				node = crop .. "_1"
 				-- trust that farming.registered_plants only contains valid nodes
-				basic_machines.plant_cache[item] = node
 			end
 		end
 	end
@@ -88,6 +87,7 @@ local item_to_node = function(item)
 	if not minetest.registered_nodes[node] then
 		return nil
 	end
+	basic_machines.plant_cache[item] = node
 	return node
 end
 
